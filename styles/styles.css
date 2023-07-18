@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+body{
+  font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.img-game{
+  height: 1.5rem;
+  padding-right: 10px ;
+}
+.title{
+  display: flex;
+  height: 1.5rem;
+  width: 10rem;
+  padding:  20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #0B0223;
+}
+.g-style{
+  color: rgba(255, 66, 165, 1)
+}
+li{
+  list-style-type: none;
+}
+.about-title{
+   display: flex;
+   height: 3rem;
+   width: 30rem;
+   justify-content: space-evenly;
+   align-items: center;
+   font-size: 18px;
+   font-weight: 500;
+   padding-top: 20px;
+}
+.follow{
+  display: flex;
+  height: 3rem;
+  width: 13rem;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.10);
+}
+
+
+
+
+/* mobile device */
+@media screen and (min-width:425px) and (max-width:527px){
+  nav,
+  .about-title
+  {
+   flex-direction: column;
+   justify-content: center;
+   align-items:center ;
+   font-size: 12px;
+   gap:20px;
+}
+}
+
+/* tablet device */
+@media screen and (min-width:527px) and (max-width:768px){
+  nav,
+  .about-title
+  {
+   flex-direction: column;
+   justify-content: center;
+   align-items:center ;
+   font-size: 12px;
+   gap:20px;
+}
+}
