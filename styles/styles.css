@@ -144,6 +144,23 @@ background-clip: text;
   margin: 20px 7%;
   gap: 10px;
 }
+.watch{
+  background-image: url(../images/play-button.png);
+  background-repeat: no-repeat;
+  background-position-x:center ;
+  background-position-y:center ;
+  height: 400px;
+  width: 335px;
+  position: absolute;
+  top: 890px;
+  right: 435px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.306);
+}
+.watch:hover{
+  opacity: 1;
+}
+
 /* play instant */
 .play-instant{
   height: 800px;
