@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
-
+*{
+  margin: 0;
+}
 body{
   font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -9,6 +11,8 @@ font-family: 'Work Sans', sans-serif;
 nav{
   display: flex;
   justify-content: space-around;
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
   
 }
 .img-game{
@@ -41,6 +45,7 @@ li{
    font-size: 18px;
    font-weight: 500;
    padding-top: 20px;
+   padding-bottom: 20px;
 }
 .follow{
   display: flex;
@@ -52,31 +57,125 @@ li{
   background: rgba(11, 2, 35, 0.10);
 }
 
+/* banner part */
+.banner{
+  display: flex;
+  gap: 7%;
+
+}
+.banner-1{
+  background-image: url("../images/Group\ 14.png");
+  height: 650px;
+  width: 800px;
+}
+.play{
+  color: #0B0223;
+ font-size: 48px;
+ text-align: center;
+ font-weight: 600;
+ margin-top: 15%;
+ margin-bottom: 2%;
+}
+.goat{
+  margin: 0;
+font-size: 95px;
+font-weight: 800;
+text-align: center;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.play-description{
+  width: 200px;
+  margin-left: 30%;
+  color: #534C64;
+  font-size: 15px;
+  font-weight: 500;
+}
+.btn-style{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 70px;
+}
+.btn-sign, .btn-go{
+  color: #FFF;
+  font-weight: 600;
+  border: none;
+  height: 50px;
+  width: 120px;
+  border-radius: 48px;
+  background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+.btn-go{
+  background: #4EC5F7;
+}
 
 
 
 /* mobile device */
-@media screen and (min-width:425px) and (max-width:527px){
-  nav,
-  .about-title
-  {
-   flex-direction: column;
-   justify-content: center;
-   align-items:center ;
-   font-size: 12px;
-   gap:20px;
+@media screen and (min-width:425px) and (max-width:526px){
+  nav{
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    padding-top: 15px;
+  }
+  .about-title{
+    flex-direction: column;
+    height: 500px;
+    gap: 15px;
+  }
+.banner{
+  flex-direction: column;
+  width: 100%;
 }
+.banner-1{
+  margin: 20px 20px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 430px;
+  width: auto;
+}
+.play{
+  margin-top: 15px;
+}
+.banner-img{
+  max-width: 100%;
+} 
 }
 
 /* tablet device */
-@media screen and (min-width:527px) and (max-width:768px){
-  nav,
-  .about-title
-  {
-   flex-direction: column;
-   justify-content: center;
-   align-items:center ;
-   font-size: 12px;
-   gap:20px;
+@media screen and (min-width:526px) and (max-width:768px){
+  nav{
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    padding-top: 15px;
+  }
+  .about-title{
+    flex-direction: column;
+    height: 500px;
+    gap: 15px;
+  }
+.banner{
+  flex-direction: column;
+  width: 100%;
 }
+.banner-1{
+  margin: 30px 30px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  width: auto;
+}
+.play{
+  margin-top: 70px;
+}
+.banner-img{
+  max-width: 100%;
+} 
 }
