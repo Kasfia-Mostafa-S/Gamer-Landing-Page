@@ -7,13 +7,11 @@ body{
 font-family: 'Open Sans', sans-serif;
 font-family: 'Work Sans', sans-serif;
 }
-
 nav{
   display: flex;
   justify-content: space-around;
   background: #FFF;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-  
 }
 .img-game{
   height: 1.5rem;
@@ -56,12 +54,10 @@ li{
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.10);
 }
-
 /* banner part */
 .banner{
   display: flex;
   gap: 7%;
-
 }
 .banner-1{
   background-image: url("../images/Group\ 14.png");
@@ -86,7 +82,6 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
-
 .play-description{
   width: 200px;
   margin-left: 30%;
@@ -114,9 +109,7 @@ background-clip: text;
 .btn-go{
   background: #4EC5F7;
 }
-
 /* game card */
-
 .card-section{
   height: 700px;
 }
@@ -144,22 +137,23 @@ background-clip: text;
   margin: 20px 7%;
   gap: 10px;
 }
-
-.watch{
-  background-image: url(../images/play-button.png);
-  background-repeat: no-repeat;
-  background-position-x:center ;
-  background-position-y:center ;
-  height: 400px;
+.image-container2{
+  height: 395px;
   width: 335px;
   position: absolute;
-  top: 890px;
+  top: 880px;
   right: 435px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.306);
 }
-.watch:hover{
+.image-container:hover .image-container2{
+  background-image: url("../images/play-button.png");
+  background-repeat: no-repeat;
+  background-position:center ;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.444);
   opacity: 1;
+  cursor: pointer;
 }
 
 /* play instant */
@@ -292,7 +286,7 @@ font-size: 16px;
 font-weight: 500;
 }
 /* mobile device */
-@media screen and (min-width:425px) and (max-width:525px){
+@media screen and (min-width:425px) and (max-width:526px){
 
   nav{
     flex-direction: column;
@@ -330,6 +324,15 @@ font-weight: 500;
   flex-direction: column;
   margin: 10% 10%;
 }
+.image-container2{
+  height: 400px;
+  width: 335px;
+  position: absolute;
+  top: 410%;
+  right: 45px;
+  border-radius: 20px;
+  text-decoration: none;
+}
 .card-title{
   padding: 10px 20px;
 }
@@ -358,11 +361,12 @@ font-weight: 500;
 .img-play-1{
   width: 300px;
   margin-left: 90px;
+  /* position: relative; */
 }
 .img-play-2{
-  position: absolute;
+  /* position: fixed; */
   height: 170px;
-  top: 730%;
+  top:670%;
   left: 25px;
 }
 /* option section  */
@@ -457,6 +461,15 @@ gap: 15px;
   width: auto;
   margin: 5% 30%;
 }
+.image-container2{
+  height: 400px;
+  width: 335px;
+  position: absolute;
+  top: 475%;
+  right: 200px;
+  border-radius: 20px;
+  text-decoration: none;
+}
 /* play instant */
 .play-instant{
   flex-direction: column;
@@ -489,7 +502,7 @@ gap: 15px;
 .img-play-2{
   position: absolute;
   height: 200px;
-  top: 800%;
+  top: 730%;
   right: 380px;
 }
 /* option section  */
